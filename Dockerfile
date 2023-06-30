@@ -1,14 +1,14 @@
-# Imagen base en wordpress
+# imagen a base de wordpress
 FROM wordpress:latest
 
-# Directorio de trabajo en el contenedor
-WORKDIR /var/www/html
+# Copiar el archivo de configuración personalizado a la imagen de WordPress
+COPY wp-config.php /var/www/html/wp-config.php
 
-# Copiar el archivo wp-config.php personalizado
-COPY wp-config.php .
+# Instalar dependencias necesarias
+RUN apt-get update && apt-get install -y php-cli
 
-# Permisos para el archivo wp-config.php
-RUN chown www-data:www-data wp-config.php && chmod 600 wp-config.php
+# Ofuscar el archivo wp-config.php
+RUN php -f /var/www/html/wp-config.php -- --obfuscate --replace-string-names
 
-# Puerto expuesto por el contenedor
-EXPOSE 80
+# Establecer permisos adecuados
+RUN chown www-data:www-data /var/www/html/wp-config.php && chmod 400 /var/www/html/wp-config.php
