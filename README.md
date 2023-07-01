@@ -85,17 +85,17 @@ Este comando permite conectarse a la base de datos
 
      mysql -h databasewordp-instance-1.cv0flcl8po3i.us-east-1.rds.amazonaws.com -P 3306 -u admin -p 
      
-*Ingresar password de base de datos: Duoc.2023*
+*Ingresar password de base de datos: "Duoc.2023"*
 
 una vez dentro, crear una base de datos para la conexión de WordPress en este caso fue nombrada como “wp”
 
 Asiganar nombre a la base de datos.
 
-    create database wp 
+    create database wp; 
 
 Asiganar permisos en la base de datos recién creada.
 
-    grant all privileges on wp.* to admin 
+    grant all privileges on wp.* to admin; 
 
 Confirmar cambio
 
@@ -127,7 +127,7 @@ Editar el archivo ~/.aws/credentials con el editor de tu preferencia y pegar las
 
     vim ~/.aws/credentials
 
-Ejemplo de lo que se debe poner en el Vim:
+Ejemplo de lo que se debe poner en el archivo credentials:
 
     [default]
     aws_access_key_id=
@@ -151,19 +151,19 @@ Buscar Ver comandos de envío y seguir los pasos.
 
 - Recuperar token de autenticación y autentiquer el Docker.
 
-       aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin
-
+       aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 532698486961.dkr.ecr.us-east-1.amazonaws.com
+  
 -  Crear una imagen de Docker con el siguiente comando
 
         docker build -t wordpress .
 
 - Cuando se complete la creación, etiquete la imagen para poder enviarla a este repositorio.
 
-        docker tag wordpress:latest URIREPOSITORIO/wordpress:latest
+        docker tag myrepo:latest 532698486961.dkr.ecr.us-east-1.amazonaws.com/myrepo:latest
   
 - Ejecute el siguiente comando para enviar esta imagen al repositorio de AWS recién creado.
 
-        docker push URIREPOSITORIO/wordpress:latest
+        docker push 532698486961.dkr.ecr.us-east-1.amazonaws.com/myrepo:latest
   
 ------------
 
@@ -202,6 +202,14 @@ Por último, crear el servicio como tal.
 ------------
 ### Paso 7: Verificar funcionamiento de sitio Wordpress.
 
-Para comprobar que el servicio se esta ejecutando de forma correcta debemos copiar el dns del load balancer en algun navegador en donde se debería ver la pagina de instalación Wordpress.
+Para comprobar que el servicio se esta ejecutando de forma correcta copiar el link del balanceador de carga: http://mylb-1018750630.us-east-1.elb.amazonaws.com/ 
 
-Mario bravo.
+------------
+### Resumen.
+
+Para acceder al sitio montado en contenedor WordPress: http://mylb-1018750630.us-east-1.elb.amazonaws.com/.
+
+Como se expone las credenciales en el archivo wp-config.php se realiza la incoporacion del siguiente comando:
+RUN php -f /var/www/html/wp-config.php -- --obfuscate --replace-string-names
+Esto con el fin de encubrir los datos sensibles del archivo.
+
