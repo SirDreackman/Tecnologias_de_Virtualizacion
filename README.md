@@ -4,7 +4,7 @@ El siguiente repositorio tiene como objetivo explicar paso a paso la implementac
 
 ------------
 
-## Paso 1 Lanzar instancia de EC2
+## Paso 1: Lanzar instancia de EC2
 Generar una instancia EC2 con Amazon Linux 2 AMI de tipo T2.micro.
 Utilizar par de claves vockey.
 En detalles avanzados, introducir un script que contenga los comandos para implementar Dockers en el servidor:
