@@ -85,7 +85,7 @@ Este comando permite conectarse a la base de datos
 
      mysql -h databasewordp-instance-1.cv0flcl8po3i.us-east-1.rds.amazonaws.com -P 3306 -u admin -p 
      
-*ingresar password de base de datos: Duoc.2023*
+*Ingresar password de base de datos: Duoc.2023*
 
 una vez dentro, crear una base de datos para la conexión de WordPress en este caso fue nombrada como “wp”
 
