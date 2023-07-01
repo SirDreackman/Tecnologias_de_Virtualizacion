@@ -101,3 +101,4 @@ Confirmar cambio
 
     flush privileges; 
 
+**Comandos necesarios para permitir configurar y utilizar herramientas como AWS CLI y Amazon ECR **
