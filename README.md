@@ -151,7 +151,5 @@ Buscar Ver comandos de envío y seguir los pasos.
 
 - Recuperar token de autenticación y autentiquer el Docker.
 
-        aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin __________
-
-
+       aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin
 
