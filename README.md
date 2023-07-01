@@ -159,8 +159,8 @@ Buscar Ver comandos de envío y seguir los pasos.
 
 - Cuando se complete la creación, etiquete la imagen para poder enviarla a este repositorio.
 
-        docker tag wordpress:latest 773425074112.dkr.ecr.us-east-1.amazonaws.com/wordpress:latest
+        docker tag wordpress:latest URIREPOSITORIO/wordpress:latest
   
 - Ejecute el siguiente comando para enviar esta imagen al repositorio de AWS recién creado.
 
-        docker push 773425074112.dkr.ecr.us-east-1.amazonaws.com/wordpress:latest
+        docker push URIREPOSITORIO/wordpress:latest
