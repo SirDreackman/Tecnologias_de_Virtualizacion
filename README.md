@@ -77,7 +77,8 @@ En la consola de AWS, buscar y seleccionar "RDS" para acceder al servicio de bas
 
 ### 3.1 Instalación base de datos en la instancia EC2
 
-En la CLI del EC2 instalar mariadb con el siguiente comando 
+En la CLI del EC2 instalar mariadb con el siguiente comando
+
       yum install mariadb105-server-utils.x86_64
 
 Conexión a la base de datos creada previamente.
