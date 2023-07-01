@@ -133,3 +133,15 @@ Ejemplo de lo que se debe poner en el Vim:
     aws_access_key_id=__________
     aws_secret_access_key=____________
     aws_session_token=_________________
+
+------------
+
+### 5 Creación de ECR.
+
+Los pasos para crear y configurar un repositorio ECR son los siguientes:
+
+1. Buscar "ECR" .
+2. Haz clic en "Crear repositorio" y configura la visibilidad del repositorio como "Privado".
+3. Asigna un nombre al repositorio y haz clic en "Crear". 
+4. Puedes dejar las demás configuraciones por defecto.
+   
