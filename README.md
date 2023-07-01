@@ -14,16 +14,22 @@ En detalles avanzados, introducir un script que contenga los comandos para imple
  !/bin/bash
     #Actualizar el sistema operativo
     sudo yum update -y
+
     #Instalar el paquete amazon-linux-extras
     sudo yum install -y amazon-linux-extras
+
    # Habilitar el repositorio de Docker en Amazon Linux Extras
     sudo amazon-linux-extras enable docker
+
     #Instalar Docker
     sudo yum install -y docker
+
     #Iniciar el servicio de Docker
     sudo service docker start
+
     #Configurar Docker para que se inicie automáticamente
    sudo chkconfig docker on
+
    #Agregar el usuario actual al grupo docker
    sudo usermod -a -G docker ec2-user
 ```
