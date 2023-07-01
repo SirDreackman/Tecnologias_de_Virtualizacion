@@ -136,7 +136,7 @@ Ejemplo de lo que se debe poner en el Vim:
 
 ------------
 
-### 5 Creación de ECR.
+### Paso 5: Creación de ECR.
 
 Los pasos para crear y configurar un repositorio ECR son los siguientes:
 
