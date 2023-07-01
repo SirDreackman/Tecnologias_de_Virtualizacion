@@ -90,7 +90,12 @@ ingresar password de base de datos: Duoc.2023
 
 una vez dentro, crear una base de datos para la conexión de WordPress en este caso fue nombrada como “wp”
 
-    create database wp #Asiganar nombre a la base de datos.
-    grant all privileges on wp.* to admin #Asiganar permisos en la base de datos recién creada.
-    flush privileges; #Confirmar cambio
+    #Asiganar nombre a la base de datos.
+    create database wp 
+
+    #Asiganar permisos en la base de datos recién creada.
+    grant all privileges on wp.* to admin 
+
+    #Confirmar cambio
+    flush privileges; 
 
