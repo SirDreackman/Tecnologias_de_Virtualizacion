@@ -173,6 +173,9 @@ Se creará una definición de tarea.
 
 - Asignar nombre a la familia de definición de tarea.
 - Asignar otro nombre  y colocamos la uri de la imagen que está en el repositorio.
+-  Habilitar puertos el puerto 80 HTTP.
 - Entorno de la aplicación elegir "AWS FARGATE".
+- Elegir sistema operativo Linux.
+- Tamaño de la tarea elegir 2 vCPU y 4 GB de memoria
 - En rol de tarea y rol de ejecución de tareas"labrole".
-- Elegir almacenamiento efímero de valor minímo 21gb.
+- Elegir almacenamiento efímero de valor minímo 21 GB.
