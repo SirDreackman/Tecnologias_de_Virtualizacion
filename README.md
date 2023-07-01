@@ -1,4 +1,4 @@
-### Implementación de contenedores en la nube de aws
+# Implementación de contenedores en la nube de aws
 
 El siguiente repositorio tiene como objetivo explicar paso a paso la implementación de contenedores en AWS y las herramientas asociadas.
 
@@ -42,7 +42,7 @@ Una vez creada la instancia, se debe modificar el grupo de seguridad creado por 
 ------------
 
 
-#Paso 2:   Creación del archivo Dockerfile
+## Paso 2:   Creación del archivo Dockerfile
 Conectado a la instancia EC2, crear una carpeta dentro de la raíz, en este caso se genero una llamada mywordpress con el comando mkdir mywordpress. 
 
 Dentro de la carpeta creada, se debe generar un archivo llamado Dockerfile, el cual contendrá las instrucciones para la implementación del contenedor, junto a este archivo genera el archivo de configuración wp-config.php con los parámetros de configuración,  en los siguientes links se muestran los archivos Dockerfile y wp-config.php:
