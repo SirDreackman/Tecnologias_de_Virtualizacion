@@ -61,7 +61,7 @@ https://raw.githubusercontent.com/SirDreackman/Tecnologias_de_Virtualizacion/mai
 
 
 
-#Paso 3: Creación instancia de base de datos en RDS
+## Paso 3: Creación instancia de base de datos en RDS
 En la consola de AWS, buscar y seleccionar "RDS" para acceder al servicio de base de datos relacional.
 
 - Hacer clic en "Crear base de datos" para comenzar el proceso de creación.
