@@ -1,7 +1,5 @@
 ### Implementación de contenedores en la nube de aws
 
-------------
-
 El siguiente repositorio tiene como objetivo explicar paso a paso la implementación de contenedores en AWS y las herramientas asociadas.
 
 ------------
