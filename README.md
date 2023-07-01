@@ -48,11 +48,11 @@ Conectado a la instancia EC2, crear una carpeta dentro de la raíz, en este caso
 Dentro de la carpeta creada, se debe generar un archivo llamado Dockerfile, el cual contendrá las instrucciones para la implementación del contenedor, junto a este archivo genera el archivo de configuración wp-config.php con los parámetros de configuración,  en los siguientes links se muestran los archivos Dockerfile y wp-config.php:
 
 	Dockerfile 
-**https://raw.githubusercontent.com/SirDreackman/Tecnologias_de_Virtualizacion/main/Dockerfile
-**
+https://raw.githubusercontent.com/SirDreackman/Tecnologias_de_Virtualizacion/main/Dockerfile
+
 
 	wp-config.php
-**https://raw.githubusercontent.com/SirDreackman/Tecnologias_de_Virtualizacion/main/wp-config.php**
+https://raw.githubusercontent.com/SirDreackman/Tecnologias_de_Virtualizacion/main/wp-config.php
 
 
 ------------
