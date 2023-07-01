@@ -210,6 +210,8 @@ Para comprobar que el servicio se esta ejecutando de forma correcta copiar el li
 Para acceder al sitio montado en contenedor WordPress: http://mylb-1018750630.us-east-1.elb.amazonaws.com/.
 
 Como se expone las credenciales en el archivo wp-config.php se realiza la incoporacion del siguiente comando:
-RUN php -f /var/www/html/wp-config.php -- --obfuscate --replace-string-names
+
+	RUN php -f /var/www/html/wp-config.php -- --obfuscate --replace-string-names
+
 Esto con el fin de encubrir los datos sensibles del archivo.
 
