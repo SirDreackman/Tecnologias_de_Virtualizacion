@@ -81,12 +81,11 @@ En la CLI del EC2 instalar mariadb con el siguiente comando
 
       yum install mariadb105-server-utils.x86_64
 
-Conexión a la base de datos creada previamente.
-En la CLI agregamos el siguiente comando:
+Este comando permite conectarse a la base de datos
 
      mysql -h databasewordp-instance-1.cv0flcl8po3i.us-east-1.rds.amazonaws.com -P 3306 -u admin -p 
-este comando permite conectarse a la base de datos
-ingresar password de base de datos: Duoc.2023
+     
+*ingresar password de base de datos: Duoc.2023*
 
 una vez dentro, crear una base de datos para la conexión de WordPress en este caso fue nombrada como “wp”
 
