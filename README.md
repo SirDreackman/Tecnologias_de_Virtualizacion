@@ -8,6 +8,7 @@ El siguiente repositorio tiene como objetivo explicar paso a paso la implementac
 Generar una instancia EC2 con Amazon Linux 2 AMI de tipo T2.micro.
 Utilizar par de claves vockey.
 En detalles avanzados, introducir un script que contenga los comandos para implementar Dockers en el servidor:
+
 		!/bin/bash
 	 Actualizar el sistema operativo
 		sudo yum update -y
