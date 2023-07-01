@@ -179,3 +179,29 @@ Se creará una definición de tarea.
 - Tamaño de la tarea elegir 2 vCPU y 4 GB de memoria
 - En rol de tarea y rol de ejecución de tareas"labrole".
 - Elegir almacenamiento efímero de valor minímo 21 GB.
+
+Luego, se creará el cluster.
+
+- Asignar nombre del clúster
+- En redes elegimos todas
+
+Por último, crear el servicio como tal.
+
+- Escoger estrategia de proveedor de capacidad.
+- En Familia elegir tarea creada.
+- Asignar un nombre para el servicio.
+- Tipo de servicio Réplica Tareas deseadas 1
+- Dejar todas las subredes.
+- Escoger Grupos de seguridad (EC2 , BBDD Y EC2 de la BBDD).
+- Crear un nuevo balanceador de carga tipo ALB
+- Asiganar nombre del balanceador de carga
+- Asignar agente escucha puerto 80 HTTP.
+- Crear nuevo grupo de destino
+- Crear servicio.
+  
+------------
+### Paso 7: Verificar funcionamiento de sitio Wordpress.
+
+Para comprobar que el servicio se esta ejecutando de forma correcta debemos copiar el dns del load balancer en algun navegador en donde se debería ver la pagina de instalación Wordpress.
+
+Mario bravo.
