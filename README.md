@@ -123,7 +123,7 @@ Crear el directorio ~/.aws/:
 
     mkdir ~/.aws/
 
-Editar el archivo ~/.aws/credentials con el editor de tu preferencia y pega las credenciales de AWS CLI proporcionadas en el Lerner Lab:
+Editar el archivo ~/.aws/credentials con el editor de tu preferencia y pegar las credenciales de AWS CLI proporcionadas en el Lerner Lab:
 
     vim ~/.aws/credentials
 
