@@ -164,3 +164,15 @@ Buscar Ver comandos de envío y seguir los pasos.
 - Ejecute el siguiente comando para enviar esta imagen al repositorio de AWS recién creado.
 
         docker push URIREPOSITORIO/wordpress:latest
+  
+------------
+
+### Paso 6: Creación de servicio.
+
+Se creará una definición de tarea.
+
+- Asignar nombre a la familia de definición de tarea.
+- Asignar otro nombre  y colocamos la uri de la imagen que cargamos en el repositorio.
+- Entorno de la aplicación elegir "AWS FARGATE".
+- En rol de tarea y rol de ejecución de tareas"labrole".
+- Elegir almacenamiento efímero de valor minímo 21gb.
