@@ -105,11 +105,11 @@ Confirmar cambio
 
 ### 4 Comandos necesarios para permitir configurar y utilizar herramientas como AWS CLI y Amazon ECS
 
-Descarga el archivo "awscliv2.zip" con el siguiente comando:
+Descargar el archivo "awscliv2.zip" con el siguiente comando:
 
     curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 
-Descomprime el archivo descargado:
+Descomprir el archivo descargado:
 
     unzip awscliv2.zip
 
@@ -119,15 +119,15 @@ Ejecuta el script de instalación de AWS CLI:
 
 Configuración de las credenciales de AWS CLI:
 
-Crea el directorio ~/.aws/:
+Crear el directorio ~/.aws/:
 
     mkdir ~/.aws/
 
-Edita el archivo ~/.aws/credentials con el editor de tu preferencia y pega las credenciales de AWS CLI proporcionadas en el Lerner Lab:
+Editar el archivo ~/.aws/credentials con el editor de tu preferencia y pega las credenciales de AWS CLI proporcionadas en el Lerner Lab:
 
     vim ~/.aws/credentials
 
-Ejemplo de lo que se debe poner en el vim:
+Ejemplo de lo que se debe poner en el Vim:
 
     [default]
     aws_access_key_id=__________
