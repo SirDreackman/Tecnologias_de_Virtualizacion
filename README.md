@@ -130,9 +130,9 @@ Editar el archivo ~/.aws/credentials con el editor de tu preferencia y pegar las
 Ejemplo de lo que se debe poner en el Vim:
 
     [default]
-    aws_access_key_id=__________
-    aws_secret_access_key=____________
-    aws_session_token=_________________
+    aws_access_key_id=
+    aws_secret_access_key=
+    aws_session_token=
 
 ------------
 
