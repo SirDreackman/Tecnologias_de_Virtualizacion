@@ -145,3 +145,13 @@ Los pasos para crear y configurar un repositorio ECR son los siguientes:
 3. Asigna un nombre al repositorio y haz clic en "Crear". 
 4. Puedes dejar las demás configuraciones por defecto.
    
+Luego de crear el repositorio, subiremos la imágen de contenedor al repositorio.
+
+Buscar Ver comandos de envío y seguir los pasos.
+
+- Recuperar token de autenticación y autentiquer el Docker.
+
+        aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin __________
+
+
+
